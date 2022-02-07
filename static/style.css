@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    padding: auto;
+    margin: auto;
+}
+
+
+.container {
+    max-width: 500px;
+    max-height: auto;
+}
+
