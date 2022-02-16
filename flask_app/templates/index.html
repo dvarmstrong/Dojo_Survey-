@@ -32,6 +32,21 @@
             </ul>
         </div>
     </nav>
+    <div class="container text-danger">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <p>{{message}}</p>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
+
+
+
+    
+
+
     <div class="container text-center text-primary  mt-lg-5 bg-dark"  >
         <h2 class="display-4"><i class="fa fa-facebook" aria-hidden="true">Dojo Survey</i></h2>
         <form action="/showuser" method="post">
@@ -59,8 +74,8 @@
             </div>
             <div class="form-group">
                 <h4>Comments :</h4>
-                <label for="comments"></label>
-                <textarea name="message" id="message" title="message" cols="30" rows="10"></textarea>
+                <label for="comment"></label>
+                <textarea name="comment" id="comment" title="comment" cols="30" rows="10"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
